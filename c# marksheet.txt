@@ -1,0 +1,66 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+       Console.WriteLine("Enter your name");
+            string name = Console.ReadLine();
+            Console.WriteLine("Enter your Roll no");
+            string roll = Console.ReadLine();
+            Console.WriteLine("Enter your Class");
+            string standard = Console.ReadLine();
+            Console.WriteLine("Enter Urdu Marks");
+            int u = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter Math Marks");
+            int m = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter Physics Marks");
+            int p = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter Chemistry Marks");
+            int c = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter English Marks");
+            int e = int.Parse(Console.ReadLine());
+
+            int obt = u + m + p + c + e;
+            Console.WriteLine("Total : " + obt);
+            
+            int per = obt * 100/500;
+             Console.WriteLine("Your Percentage is :" + per);
+            
+            if(per >= 90)
+            {
+                Console.WriteLine("Grade is A1"); 
+            }
+            
+            else if(per >= 80)
+            {
+                Console.WriteLine("Grade is A"); 
+            }
+            
+            else if(per >= 70)
+            {
+                Console.WriteLine("Grade is B"); 
+            }
+            
+            
+            else if(per >= 60)
+            {
+                Console.WriteLine("Grade is C+"); 
+            }
+            
+            else if(per >= 50)
+            {
+                Console.WriteLine("Grade is C"); 
+            }
+            
+            else if(per >= 40)
+            {
+                Console.WriteLine("Grade is D"); 
+            }
+            
+        
+    }
+}
